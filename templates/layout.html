@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Encrypt / Decrypt Online </title>
+
+  <script src="https://kit.fontawesome.com/99429a2135.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="../static/images/fav.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="../static/css/newstyle.css">
+
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 id="logo"><img src="static/images/logo.png" alt=""></h1>
+        </div>
+        <div class="col-md-8">
+          <ul id="menu" style="float:right" class="float-md-right">
+            <li><a href="#banner" >Home</a></li>
+            <li><a href="#Encrypt">Encrypt</a></li>
+            <li><a href="#Encrypt">Decrypt</a></li>
+            <li><a href="#footer-sidebar">About Us</a></li>
+            <!-- <li><a href="">Contact Us</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="banner" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <div class="banner-title">
+            <h2 class="title">Encrypt / Decrypt Online</h2>
+            <p class="lead">This Online Tool Provides Encryption and Decryption of any text with a random key. This tool
+              uses a random key which nobody knows and hence provides an utmost security of any text you want to
+              protect. We also provide an option of a key of your choice. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="Encrypt">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-head">Enter Text To Encrypt / Decrypt </h2>
+      </div>
+      <form method="post" action="/encrypt">
+        <div class="d-flex">
+          <div class="form-floating" style="width: 50%;margin-right: 10px;">
+            <textarea name="floatingTextarea2" class="form-control" placeholder="Enter Your Text Here"
+              id="floatingTextarea2" style="height: 200px"></textarea>
+            <label for="floatingTextarea2">Enter Your Text Here</label>
+          </div>
+
+          <div class="form-floating" style="width: 50%;margin-left: 10px;">
+            <textarea class="form-control" placeholder="Enter Your Text Here" id="floatingTextarea3"
+              style="height: 200px" disabled></textarea>
+            <label for="floatingTextarea3">Result / Output
+
+              <p>Encrypted Text: {{ encrypted_text }}</p>
+              <p>Decrypted Text: {{ decrypted_text }}</p>
+            </label>
+
+
+
+          </div>
+        </div>
+        <div class="form-check form-switch pt-3 ">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Encrypt / Decrypt With a custom secret key
+          </label>
+          <br>
+          <br>
+          <div class="input-group flex-nowrap " style="width: 50%; margin-left: -30px;">
+            <!-- <span class="input-group-text" id="addon-wrapping">@</span> -->
+            <input name="key" type="password" class="form-control" placeholder="Secret Key" aria-label="Secret Key"
+              aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <br>
+        <br>
+        <div style="padding-top: 20px;">
+          <button name="action" value="encrypt" class="btn btn-outline-primary btn-lg " id="actionbtnn">Encrypt</button>
+          <button name="action" value="decrypt" class="btn btn-outline-primary btn-lg " id="actionbtnn">Decrypt</button>
+        </div>
+
+      </form>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="footer-sidebar">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <p>
+              Team Name: Binary Bunch
+              <br>
+              Project Title : Create a Application To Encrypt / Decrypt Texts.
+            </p>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- <div class="col-md-4">
+<div class="footer-widget">
+<h4>Address</h4>
+<address>
+<b> XYZ , Inc.</b>
+ India <br>
+
+</address>
+
+</div>
+</div> -->
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">copyright@2024 Binary Bunch.</div>
+        <div class="col-md-6">
+          <ul id="social-icons" class="float-md-right">
+            <li><a href="https://github.com/Fahadddddd" class="fa fa-github"></a></li>
+            <!-- <li><a href="" class="fa fa-twitter"></a></li> -->
+            <li><a href="https://www.linkedin.com/in/md-fahadd/" class="fa fa-linkedin"></a></li>
+            <ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

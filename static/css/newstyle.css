@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+
+.section{
+	
+	padding-top:70px;
+	padding-bottom:70px;
+}
+
+.section h2.section-head{
+	color:black;
+	text-align:center;
+	margin-bottom: 38px;
+    font-weight: 600;
+}
+
+.section h2.section-head:after{
+	background:#fd7364;
+	content: "";
+	display:block;
+	width:100px;
+	height: 3px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	
+}
+
+#header{
+	color:white;
+	background:#001432;
+	
+}
+
+/* #logo{
+	font-size:1.25rem;
+	margin-top:15px;
+	font-weight:bolder;
+	cursor: pointer;
+} */
+
+#menu{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#menu li{
+	
+	display: inline-block;
+    border-style: none;
+    margin: 1px 15px;
+	
+}
+
+#menu li a {
+	color:white;
+	font-size: 15px;
+    text-decoration: none;
+	display:block;
+	padding:15px 10px;
+	position: relative;
+}
+#menu li a::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: rgb(56, 146, 230);
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	transition: 0.5s;
+
+}
+
+#menu li a:hover::after{
+	width: 90%;
+}
+
+a {
+	text-decoration:none;
+}
+
+#img{
+	width: 200px;
+    position: relative;
+    z-index: 10;
+}
+#menu li a.active{
+	background: cadetblue;
+    border-radius: 18px;
+}
+
+#banner{
+	background:url('../images/banner.jpg');
+	background-size: 100%;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: max(1200px, 100vw);
+}
+#banner .box{
+	height: 700vh;
+    width: 100%;
+    opacity: 0.54;
+    position: absolute;
+    top: 0%;
+    background-color: black;
+}
+
+.banner-title h2{
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: bolder;
+    background: rgba(255, 255, 255, 0.603);
+    display: flex;
+	color: black;
+    padding: 16px 24px 12px;
+    font-size: xxx-large;
+    border-radius: 10px;
+    margin: 0;
+    border: 1px solid #72bdff;
+	width: 116%;
+    top: 20px;
+    position: relative;
+    left: 250px;
+}
+
+.banner-title p.lead {
+    font-family: 'Martel Sans', sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	color: #001F3F;
+	position: relative;
+    gap: 56px;
+	padding: 22px 70px 67px 1px;
+    width: 175%;
+    left: 63px;
+    top: 83px;
+	text-align: center;
+	
+}
+
+
+.banner-title{
+	margin-top:5rem;
+}
+
+
+
+.service-box{
+	text-align:center;
+}
+
+.service-box i.fa{
+	color:#e74c3c;
+	font-size:70px;
+	margin-bottom:15px;
+}
+
+
+
+
+
+
+
+
+
+#footer-sidebar{
+	color:white;
+	background:#34495e;
+	padding:20px 0;
+}
+
+.footer-widget h4:after{
+	content:"";
+	background:white;
+	display:block;
+	width:50px;
+	height:2px;
+	margin:5px 0;
+	
+}
+
+.footer-widget a{
+	color:white;
+	
+}
+
+.latest-news{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.latest-news li{
+	margin-bottom:3px;
+	
+}
+
+.latest-news li:before{
+	content: "\f101";
+	font-family: FontAwesome;
+	padding-right:4px;
+}
+
+#footer{
+	color:white;
+	background:#2c3e50;
+	padding:10px 0;
+}
+
+#social-icons{
+	list-style:none;
+	color:white;
+	margin:0;
+	padding:0;
+	
+}
+
+#social-icons li{
+	display:inline-block;
+	padding-left:5px;
+}
+
+
+#social-icons li a{
+	color:white;
+	font-size:20px;
+}
+
+
+
+
+
+
+.form-switch {
+    padding-left: 3.5em;
+}
+
+#actionbtnn{
+	border-radius: 24px;
+    background-color: #0a66c2;
+	width: 120px;
+	color: whitesmoke;
+}
+/* #actionbtnn:hover {
+	background-color: #0a66c2 !important;
+} */
+
+
+
+
+
+
+
+
+
+
